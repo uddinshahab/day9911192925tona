@@ -1,0 +1,19 @@
+.heading{
+    border-bottom: 2px solid #ddd;
+    padding: 0 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+    position: relative;
+    margin: 24px 0;
+    &:before {
+        height: 2px;
+        display: block;
+        width: 60px;
+        background: #808080;
+        border-right: 1px white;
+        content: '';
+        position: absolute;
+        bottom: -2px;
+    }
+}

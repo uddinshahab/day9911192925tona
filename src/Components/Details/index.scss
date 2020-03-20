@@ -1,0 +1,70 @@
+.detail-box{
+    border: 1px solid #ccc;
+    padding: 14px;
+    .detail-desc{
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        figure{
+            
+            background: aqua;
+            img{
+                width: 100%;
+            }
+        }
+        aside{
+            flex: 1;
+            header{
+                margin-bottom: 20px;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p strong{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    h6{
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    ol{
+        padding-left: 20px;
+        margin-bottom: 20px;
+        li{
+            margin-bottom: 3px;
+        }
+    }
+}
+.btn-scan{
+    border-radius: 20px;
+    border: 0;
+    background: pink;
+    padding: 5px 25px;
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+#scannedText{
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 12px;
+}
+@media (min-width: 600px) {
+    .detail-box{
+        .detail-desc{
+            flex-direction: row;
+            figure{
+                margin-right: 1rem;
+                width: 150px;
+            }
+        }
+    }
+}
